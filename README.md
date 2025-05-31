@@ -1,21 +1,95 @@
-# Java: Getting Started (Maven)
+# 🌐 Customer Web Application
 
-A barebones Java app, which can easily be deployed to Heroku.
+A modern Java web application built with Spring Boot, designed to demonstrate cloud deployment capabilities and database integration. This project serves as a practical example of building and deploying a web application on Heroku.
 
-## Deploying to Heroku
+## ✨ Features
 
-Using resources for this example app counts towards your usage. [Delete your app](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-apps-destroy) and [database](https://devcenter.heroku.com/articles/heroku-postgresql#removing-the-add-on) as soon as you are done experimenting to control costs.
+- **Spring Boot Architecture**
+  - Robust backend with Spring Boot framework
+  - MVC pattern implementation
+  - RESTful endpoints
+  
+- **Database Integration**
+  - PostgreSQL database support
+  - Dynamic database operations
+  - Real-time data persistence
+  
+- **Modern Frontend**
+  - Responsive design with Bootstrap
+  - Thymeleaf templating
+  - Interactive UI components
 
-By default, apps use Eco dynos if you are subscribed to Eco. Otherwise, it defaults to Basic dynos. The Eco dynos plan is shared across all Eco dynos in your account and is recommended if you plan on deploying many small apps to Heroku. Learn more about our low-cost plans [here](https://blog.heroku.com/new-low-cost-plans).
+## 🛠️ Technologies Used
 
-Eligible students can apply for platform credits through our new [Heroku for GitHub Students program](https://blog.heroku.com/github-student-developer-program).
+- **Backend**
+  - Java 17
+  - Spring Boot
+  - Spring MVC
+  - JPA/Hibernate
+  
+- **Frontend**
+  - Thymeleaf
+  - Bootstrap 3.3.7
+  - jQuery
+  
+- **Database**
+  - PostgreSQL
+  
+- **Build Tools**
+  - Maven
+  
+- **Deployment**
+  - Heroku Platform
 
-This application supports the [Getting Started with Java on Heroku](https://devcenter.heroku.com/articles/getting-started-with-java) article - check it out for instructions on how to deploy this app to Heroku and also run it locally.
+## 🚀 Quick Start
 
-Alternatively, you can deploy it using this Heroku Button:
+### Prerequisites
+- Java 17 or higher
+- Maven
+- PostgreSQL
+- Git
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+### Local Development Setup
 
-For more information about using Java on Heroku, see these Dev Center articles:
+1. Clone the repository:
+```bash
+git clone https://github.com/ItsSouls/CustomerWebApp.git
+```
+2. Navigate to the project directory:
+cd CustomerWebApp
+3. Build the project:
+mvn clean install
+4. Run the application:
+mvn spring-boot:run
+The application will be available at http://localhost:8080
 
-- [Java on Heroku](https://devcenter.heroku.com/categories/java)
+📋 Project Structure
+
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── heroku/
+│   │           └── java/
+│   │               └── GettingStartedApplication.java
+│   └── resources/
+│       ├── templates/
+│       │   ├── fragments/
+│       │   ├── error.html
+│       │   ├── index.html
+│       │   └── database.html
+│       ├── public/
+│       │   └── stylesheets/
+│       └── application.properties
+
+🌍 Deployment
+Heroku Deployment
+  1. Create a Heroku account if you haven't already
+  2. Install the Heroku CLI
+  3. Deploy using the following commands:
+     heroku create
+     git push heroku main
+  Alternatively, deploy with one click:
+<img alt="Deploy to Heroku" src="https://www.herokucdn.com/deploy/button.svg">
+
+
