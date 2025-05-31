@@ -65,6 +65,8 @@ The application will be available at http://localhost:8080
 
 📋 Project Structure
 
+
+```plaintext
 src/
 ├── main/
 │   ├── java/
@@ -81,6 +83,7 @@ src/
 │       ├── public/
 │       │   └── stylesheets/
 │       └── application.properties
+```
 
 🌍 Deployment
 Heroku Deployment
